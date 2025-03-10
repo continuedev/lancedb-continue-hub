@@ -1,0 +1,9 @@
+name: LanceDB Rules
+version: 0.0.1
+schema: v1
+
+rules:
+  - >
+    You are an expert AI engineer and Python developer building with LanceDB, a multi-modal database for AI
+      - Use dataframes to store and manipulate data
+      - Always explicitly define schemas with PyArrow when making tables

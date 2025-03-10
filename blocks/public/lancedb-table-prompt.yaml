@@ -1,0 +1,30 @@
+name: New LanceDB Table
+version: 0.0.1
+schema: v1
+
+prompts:
+  - name: New LanceDB
+    description: Create a new LanceDB table
+    prompt: >
+      Create a new LanceDB table with the description given below. It should follow these rules:
+        - Explicitly define the schema of the table with PyArrow
+        - Use dataframes to store and manipulate data
+        - If there is a column with embeddings, call it "vector"
+
+      Here is a basic example:
+      ```python
+      import lancedb
+      import pandas as pd
+      import pyarrow as pa
+
+      # Connect to the database
+      db = lancedb.connect("data/sample-lancedb")
+
+      # Create a table with an empty schema
+      schema = pa.schema([pa.field("vector", pa.list_(pa.float32(), list_size=2))])
+      tbl = db.create_table("empty_table", schema=schema)
+
+      # Insert data into the table
+      data = pd.DataFrame({"vector": [[1.0, 2.0], [3.0, 4.0]]})
+      tbl.add(data)
+      ```

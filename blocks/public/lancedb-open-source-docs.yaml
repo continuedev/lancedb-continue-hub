@@ -1,0 +1,7 @@
+name: LanceDB Open Source Docs
+version: 0.0.1
+schema: v1
+
+docs:
+  - name: LanceDB Open Source Docs
+    startUrl: https://lancedb.github.io/lancedb/
