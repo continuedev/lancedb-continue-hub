@@ -6,11 +6,11 @@ rules:
   - uses: lancedb/lancedb-rules
 
 docs:
-  - uses: starter/lancedb-enterprise-docs
-  - uses: starter/lancedb-open-source-docs
+  - uses: lancedb/lancedb-enterprise-docs
+  - uses: lancedb/lancedb-open-source-docs
 
 prompts:
-  - uses: starter/lancedb-table-prompt
+  - uses: lancedb/lancedb-table-prompt
 
 models:
   - uses: anthropic/claude-3-7-sonnet
