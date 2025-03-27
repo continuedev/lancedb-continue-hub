@@ -1,5 +1,5 @@
 name: LanceDB Assistant
-version: 0.0.2
+version: 0.0.3
 schema: v1
 
 rules:
