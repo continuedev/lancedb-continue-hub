@@ -1,5 +1,5 @@
 name: LanceDB Assistant
-version: 0.0.3
+version: 0.0.4
 schema: v1
 
 rules:
@@ -13,7 +13,7 @@ prompts:
   - uses: lancedb/lancedb-table-prompt
 
 models:
-  - uses: ollama/gemma3-27b
+  - uses: ollama/gemma3-4b
 
   - uses: ollama/qwen2.5-coder-1.5b
     override:
