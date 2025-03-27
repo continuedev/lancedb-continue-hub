@@ -13,29 +13,14 @@ prompts:
   - uses: starter/lancedb-table-prompt
 
 models:
-  - uses: anthropic/claude-3-7-sonnet
-    with:
-      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-    override:
-      roles:
-        - chat
-        - edit
-        - apply
+  - uses: ollama/gemma3-27b
 
-  - uses: mistral/codestral
-    with:
-      MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+  - uses: ollama/qwen2.5-coder-1.5b
     override:
       roles:
         - autocomplete
 
-  - uses: voyageai/voyage-code-3
-    with:
-      VOYAGE_API_KEY: ${{ secrets.VOYAGE_API_KEY }}
-
-  - uses: voyageai/rerank-2
-    with:
-      VOYAGE_API_KEY: ${{ secrets.VOYAGE_API_KEY }}
+  - uses: ollama/nomic-embed-text-latest
 
 context:
   - uses: continuedev/diff-context
