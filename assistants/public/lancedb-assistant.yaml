@@ -1,16 +1,16 @@
-name: LanceDBAssistant
-version: 0.0.1
+name: LanceDB Assistant
+version: 0.0.2
 schema: v1
 
 rules:
   - uses: lancedb/lancedb-rules
 
 docs:
-  - uses: starter/lancedb-enterprise-docs
-  - uses: starter/lancedb-open-source-docs
+  - uses: lancedb/lancedb-enterprise-docs
+  - uses: lancedb/lancedb-open-source-docs
 
 prompts:
-  - uses: starter/lancedb-table-prompt
+  - uses: lancedb/lancedb-table-prompt
 
 models:
   - uses: ollama/gemma3-27b
