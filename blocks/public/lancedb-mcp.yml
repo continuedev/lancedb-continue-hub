@@ -1,0 +1,9 @@
+name: LanceDB MCP
+version: 1.0.0
+schema: v1
+mcpServers:
+  - name: lancedb-mcp
+    command: uvx
+    args:
+      - mcp-lance-db
+    connectionTimeout: 20000
