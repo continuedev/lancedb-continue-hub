@@ -6,3 +6,4 @@ mcpServers:
     command: uvx
     args:
       - mcp-lance-db
+    connectionTimeout: 20000
